@@ -1,0 +1,44 @@
+{
+  "_example": "FORMAT ONLY. Made-up values. Not a trade.",
+  "id": "2026-01-01-EUR_USD-001",
+  "signal_at": "2026-01-01T14:00:00Z",
+  "pair": "EUR_USD",
+  "direction": "BUY",
+  "model": {
+    "confidence": 0.71,
+    "reasoning": "Plain-language reasoning the agent wrote when it produced the signal.",
+    "factors_for": ["example_factor_a"],
+    "factors_against": ["example_factor_b"]
+  },
+  "risk_gate": {
+    "passed": true,
+    "checks": {
+      "pair_whitelisted": true,
+      "protocol_v2_filter": true,
+      "size_within_limit": true,
+      "daily_loss_cap_ok": true
+    }
+  },
+  "approval": {
+    "status": "approved",
+    "by": "human",
+    "at": "2026-01-01T14:03:00Z"
+  },
+  "execution": {
+    "status": "filled",
+    "entry_price": 1.0000,
+    "units": 1000,
+    "filled_at": "2026-01-01T14:03:05Z"
+  },
+  "outcome": {
+    "status": "closed",
+    "exit_price": 1.0000,
+    "closed_at": "2026-01-01T18:00:00Z",
+    "exit_reason": "stop | target | manual",
+    "pnl": 0.0
+  },
+  "review": {
+    "signal_correct": null,
+    "note": "Filled in during the weekly reflection."
+  }
+}
